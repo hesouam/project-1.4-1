@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'TTLakes-Thin';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./fonts/TTLakes-Regular.woff');
+}
+
+@font-face {
+    font-family: 'TTLakes-Thin';
+	font-style: normal;
+	font-weight: medium;
+	src: url('./fonts/TTLakes-Medium.woff');
+}
+
+@font-face {
+    font-family: 'TTLakes-Thin';
+	font-style: normal;
+	font-weight: bold;
+	src: url('./fonts/TTLakes-Bold.woff');
+}
+
+body {
+    font-family: 'TTLakes-Thin';
+    width: 320px;
+}
+
+.aside-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 280px;
+    min-height: 620px;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 20px 0px 20px -10px #808080;
+}
+
+/*стили*/
+
+.aside-menu__button {
+    border: 0px solid white;
+    background-color: white;
+    font-family: 'TTLakes-Thin';
+    padding: 0;
+}
+
+.button--red {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px solid white;
+    background-color: rgb(255, 62, 121);
+}
+
+.button--red img {
+    display: block;
+    margin: auto;
+}
+
+.button--red:hover {
+    background-color: rgb(237, 32, 94);
+    transition-duration: 0.4s;
+}
+
+.aside-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.aside-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.aside-menu__contacts {
+    font-style: normal;
+}
+
+/*верхнее меню*/
+
+.aside-menu__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: 14px;
+}
+
+.aside-menu__logo-link {
+    margin-right: 60px;
+}
+
+/*ссылки с навигацией*/
+
+.aside-menu__navigation {
+    display: flex;
+    flex-grow: 1;
+}
+
+.aside-menu__navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 0;
+}
+
+.aside-menu__navigation .item:hover {
+	opacity: 0.5;
+	transition-duration: 0.4s;
+}
+
+.active {
+    position: relative;
+}
+
+.active a {
+    opacity: 0.5;
+}
+
+.aside-menu__navigation ul li a {
+    display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.active::before {
+	display: inline-block;
+	background-image: url("png/highlight.png");
+    content: "";
+    width: 4px;
+	height: 32px;
+    position: absolute;
+    left: -20px;
+    bottom: -5px;
+}
+
+/*контакты и язык*/
+
+.aside-menu__action {
+    display: flex;
+}
+
+.aside-menu__action li {
+    margin-right: 16px;
+}
+
+.aside-menu__mail {
+    margin-top: 16px;
+}
+
+.aside-menu__phone {
+    margin-top: 12px;
+}
+
+.aside-menu__phone a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.aside-menu__language {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+
+.aside-menu__language li {
+    margin-right: 7px;
+}
+
+.footer-button-active {
+    opacity: 0.5;
+}
+
+.footer-button:hover {
+    opacity: 0.5;
+    transition-duration: 0.4s;
+}
